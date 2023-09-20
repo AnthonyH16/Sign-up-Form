@@ -1,4 +1,147 @@
-h2{
-    font-size:  65px;
-    color: blue;
+@font-face {
+    font-family: 'norse';
+    src: url('Norse-Bold.otf');
+}
+.theWholeThing{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+body{   
+    font-family:monospace;
+    font-size: 20px;
+    
+    
+}
+
+.background{
+    display: flex;      
+    height: 100%;
+    width: 30%;
+    background-image: url('road.avif');
+    background-size: cover;    
+}
+legend{
+    padding-left: 15px;
+    
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column; 
+    width: 70%;
+    height: 100%;
+    background-color: #596D48;
+}
+
+.formField input[type='text'],
+.formField input[type='email'],
+.formField input[type='tel'],
+.formField input[type='password']{
+    width: 250px;
+    margin-right: 30px;
+    border-radius: 3px;
+    height: 30px;
+    border-color: #596D48;
+   
+    
+
+}
+.formField{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    font-size: small;
+
+}
+.top{
+    padding: 10% 55px 60px 55px;
+    background-color: #596D48;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+p:nth-child(3){
+    font-size: small;
+}
+.bottom{
+    background-color: #596D48;
+    padding-top: 15px;
+   
+    
+}
+.bottom p{
+    margin-left: 35px;
+    padding-bottom: 10%;
+    
+}
+/* .wholeForm{
+    background-color: white;
+    padding-top: 30px;
+    display: flex;
+    padding-bottom: 15px;
+} */
+button{
+    color: white;
+    background-color: rgb(119, 188, 225);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 70px;
+    margin-bottom: 35px;
+    padding: 10px 35px 10px 35px;
+    font-weight: bold;
+    font-family: monospace;
+}
+button:hover{
+    background-color: rgb(119,188,150);
+}
+.thingy{
+    display: flex;
+    position: relative;
+    top: 150px;
+    width: 100%;
+    height: 100px ;
+    background-color: black;
+    opacity: 35%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    justify-content: center;
+    font-family: norse;  
+
+}
+a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+.form{
+    margin: 10px;
+    background-color: white;
+    padding-top: 30px;
+    display: flex;
+    padding-bottom: 15px;
+    
+}
+input:focus{
+    outline: none;
+    border: 4px solid rgb(128, 117, 0);
+    box-shadow: 0 0 10px #ce71ba;
+}
+.formField input[type='text']:invalid,
+.formField input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
 }
